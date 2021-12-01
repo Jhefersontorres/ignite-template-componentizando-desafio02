@@ -6,13 +6,6 @@ import { SideBar } from './components/SideBar';
 import { Content } from './components/Content';
 
 import './styles/global.scss';
-
-interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
-
 interface MovieProps {
   Title: string;
   Poster: string;
@@ -21,6 +14,12 @@ interface MovieProps {
     Value: string;
   }>;
   Runtime: string;
+}
+
+interface GenreResponseProps {
+  id: number;
+  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
+  title: string;
 }
 
 export function App() {
